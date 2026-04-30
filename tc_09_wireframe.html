@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe: Ground Preparation</title>
+<style>
+    body { font-family: sans-serif; padding: 20px; }
+    .window { border: 2px solid black; width: 600px; padding: 20px; }
+    .panel { border: 1px dashed black; padding: 15px; margin-bottom: 20px; }
+    .grid-placeholder { border: 1px solid black; height: 120px; display: flex; align-items: center; justify-content: center; margin-top: 10px; color: #555; }
+    .form-group { margin-bottom: 10px; }
+    .btn { border: 1px solid black; background: none; padding: 8px 16px; cursor: pointer; font-weight: bold; }
+    .msg-area { margin-top: 15px; min-height: 20px; font-style: italic; color: #555; border: 1px dotted black; padding: 5px; }
+</style>
+</head>
+<body>
+
+<div class="window">
+    <h2>Ground Preparation</h2>
+    
+    <!-- DataGridView Section -->
+    <div class="panel">
+        <strong>Schedule Selection (DataGridView)</strong>
+        <div class="grid-placeholder">
+            [ DataGridView: Displays StaffManagementId, TurfId, Date, Time ]
+        </div>
+    </div>
+
+    <!-- Checklist Panel -->
+    <div class="panel">
+        <strong>Preparation Checklist</strong><br>
+        <small>[Disabled until a schedule is selected from the grid above]</small>
+        
+        <div style="margin-top: 15px;">
+            <div class="form-group">
+                <input type="checkbox" id="chk-brushed" disabled>
+                <label for="chk-brushed">Turf Brushed</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="chk-trash" disabled>
+                <label for="chk-trash">Trash Cleaned</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="chk-water" disabled>
+                <label for="chk-water">Water Bottles Removed</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Actions -->
+    <div>
+        <button class="btn" disabled>Save Preparation Status</button>
+    </div>
+
+    <!-- Messages -->
+    <div class="msg-area">
+        [ Success / Error Messages display here ]
+    </div>
+</div>
+
+</body>
+</html>
