@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Manager Dashboard</title>
+<style>
+body {font-family: Arial; margin:0; background:#f4f6f9;}
+.header {background:#2c3e50; color:#fff; padding:15px;}
+.cards {display:flex; gap:15px; padding:20px;}
+.card {flex:1; background:#fff; padding:15px; border-radius:8px;}
+.nav {padding:10px;}
+button {padding:10px; margin:5px;}
+table {width:100%; border-collapse: collapse; margin-top:20px;}
+th, td {padding:10px; border:1px solid #ddd;}
+.available {background:#d4edda;}
+.booked {background:#cce5ff;}
+.pending {background:#ffeeba;}
+.maintenance {background:#f8d7da;}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h2>Welcome, Manager Name</h2>
+</div>
+
+<div class="cards">
+<div class="card">Total Schedules: 120</div>
+<div class="card">Pending Requests: 8</div>
+<div class="card">Approved Today: 15</div>
+<div class="card">Revenue: ৳50,000</div>
+</div>
+
+<div class="nav">
+<button>Schedule Management</button>
+<button>Pricing Control</button>
+<button>Booking Approval</button>
+<button>Maintenance</button>
+</div>
+
+<table>
+<tr>
+<th>Turf ID</th>
+<th>Date</th>
+<th>Time</th>
+<th>Status</th>
+</tr>
+
+<tr class="available"><td>1</td><td>2026-05-10</td><td>10:00</td><td>Available</td></tr>
+<tr class="booked"><td>2</td><td>2026-05-10</td><td>12:00</td><td>Booked</td></tr>
+
+</table>
+
+</body>
+</html>
