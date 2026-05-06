@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><title>Player Sign-Up</title></head><body>
+<h1>Create Player Account</h1><form action="/register" method="post">
+<label>Name: <input type="text" name="fullname" required></label><br>
+<label>Username: <input type="text" name="username" required></label><br>
+<label>Email: <input type="email" name="email" required></label><br>
+<label>Phone: <input type="tel" name="phone" pattern="\d{11}" required></label><br>
+<label>Gender: <select name="gender"><option>Male</option><option>Female</option><option>Other</option></select></label><br>
+<label>DOB: <input type="date" name="dob" required></label><br>
+<label>Pass: <input type="password" name="pass" required></label> <label>Confirm: <input type="password" name="confirm" required></label><br>
+<button type="submit">Register</button> <a href="/login">Already have an account? Login</a>
+</form></body></html>
