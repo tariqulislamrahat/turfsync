@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="en"><head><title>Turf Location Management</title></head><body>
+<h1>Manage Turf Venues</h1><form action="/save-location" method="post">
+<label>Turf Name: <input type="text" name="turf_name" required></label> <label>Address: <input type="text" name="address" required></label><br>
+<label>Hours From: <input type="time" name="hours_from" required></label> <label>Hours To: <input type="time" name="hours_to" required></label><br>
+<label>Max Capacity: <input type="number" name="capacity" min="1" required></label> <label>Status: <select name="status"><option>Active</option><option>Inactive</option></select></label><br>
+<button type="submit">Add Location</button> <button type="button">Update</button> <button type="button">Delete</button>
+<h2>Location Registry</h2><table border="1"><tr><th>Name</th><th>Address</th><th>Capacity</th><th>Status</th></tr><tr><td>Central Turf</td><td>Dhaka</td><td>20</td><td>Active</td></tr></table>
+</body></html>
