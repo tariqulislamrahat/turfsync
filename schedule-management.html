@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Schedule Management</title>
+<style>
+body {font-family: Arial;}
+.filter {margin-bottom:15px;}
+table {width:100%; border-collapse: collapse;}
+th, td {border:1px solid #ccc; padding:10px;}
+</style>
+</head>
+
+<body>
+
+<h2>Schedule Management</h2>
+
+<div class="filter">
+<input type="date">
+<select>
+<option>All Locations</option>
+</select>
+
+<select>
+<option>Status</option>
+<option>Available</option>
+<option>Booked</option>
+<option>Maintenance</option>
+</select>
+
+<button>Refresh</button>
+</div>
+
+<table>
+<tr>
+<th>Select</th>
+<th>Turf ID</th>
+<th>Date</th>
+<th>Time</th>
+<th>Price</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td><input type="checkbox"></td>
+<td>1</td>
+<td>2026-05-10</td>
+<td>10:00</td>
+<td>500</td>
+<td>Available</td>
+</tr>
+
+</table>
+
+<br>
+
+<select>
+<option>Update Status</option>
+<option>Available</option>
+<option>Booked</option>
+<option>Maintenance</option>
+</select>
+
+<button>Save Changes</button>
+
+</body>
+</html>

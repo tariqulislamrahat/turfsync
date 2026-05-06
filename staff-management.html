@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="en"><head><title>Staff Management</title></head><body>
+<h1>Manage Staff & Managers</h1><form action="/add-user" method="post">
+<label>Name: <input type="text" name="fullname"></label> <label>Email: <input type="email" name="email"></label><br>
+<label>Phone: <input type="tel" name="phone"></label> <label>Pass: <input type="password" name="pass"></label><br>
+<label>DOB: <input type="date" name="dob"></label> <label>Role: <select name="role"><option>Staff</option><option>Manager</option></select></label><br>
+<button type="submit">Add User</button> <button type="reset">Clear Form</button>
+<h2>Account Grid</h2><table border="1"><tr><th>ID</th><th>Name</th><th>Role</th><th>Status</th></tr><tr><td>101</td><td>Jane Doe</td><td>Manager</td><td><button>Edit</button></td></tr></table>
+</body></html>
