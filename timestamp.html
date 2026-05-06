@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timestamp Logging</title>
+</head>
+<body>
+
+<h2>Auto Timestamp Logging</h2>
+
+<p>Current Time:</p>
+
+<button onclick="showTime()">Show Timestamp</button>
+
+<p id="time"></p>
+
+<script>
+function showTime() {
+    var now = new Date();
+    document.getElementById("time").innerHTML = now;
+}
+</script>
+
+<br><br>
+<a href="index.html">Back to Dashboard</a>
+
+</body>
+</html>
