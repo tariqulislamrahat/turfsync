@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="en"><head><title>Manual Turf Booking</title></head><body>
+<h1>Create Manual Booking</h1><form action="/confirm-booking" method="post">
+<label>Location: <select name="location"><option>Turf A</option><option>Turf B</option></select></label><br>
+<label>Date: <input type="date" name="book_date" required></label> <label>Time Slot: <select name="time_slot"><option>10:00-11:00</option></select></label><br>
+<label>Duration (mins): <input type="number" name="duration"></label> <label>Price (BDT): <input type="number" step="0.01" name="price"></label><br>
+<label>Customer Name: <input type="text" name="cust_name" required></label> <label>Phone: <input type="tel" name="cust_phone" required></label><br>
+<button type="submit">Confirm Booking</button>
+</form></body></html>
